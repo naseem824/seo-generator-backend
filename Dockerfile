@@ -10,7 +10,7 @@ COPY requirements.txt .
 # Step 4: Dependencies install karein aur Spacy model download karein
 RUN pip install --no-cache-dir -r requirements.txt && \
     python -m spacy download en_core_web_md
-
+    
 # Step 5: Baaqi tamam application code ko copy karein
 COPY . .
 
