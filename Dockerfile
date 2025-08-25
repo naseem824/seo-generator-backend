@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8080
 
 # Yeh nayi line PASTE karein:
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "--timeout", "120", "app:app"]
+CMD gunicorn --bind "0.0.0.0:$PORT" --timeout 120 app:app
