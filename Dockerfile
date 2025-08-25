@@ -17,5 +17,5 @@ COPY . .
 # Step 6: Fly.io ko batayein ke app port 8080 par chalegi
 EXPOSE 8080
 
-# Step 7: Application ko Gunicorn ke zariye start karein
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]
+# Yeh nayi line PASTE karein:
+CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "app:app"]
